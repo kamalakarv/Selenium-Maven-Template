@@ -58,7 +58,7 @@
         <browser>firefox</browser>
         <threads>1</threads>
         <remote>false</remote>
-        <headless>true</headless>
+        <headless>false</headless>
         <seleniumGridURL/>
         <platform/>
         <browserVersion/>
@@ -99,6 +99,41 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+<!-- <pluginManagement>
+  <plugins>
+    <plugin>
+     <groupId>org.eclipse.m2e</groupId>
+     <artifactId>lifecycle-mapping</artifactId>
+     <version>1.0.0</version>
+     <configuration>
+       <lifecycleMappingMetadata>
+         <pluginExecutions>
+           <pluginExecution>
+             <pluginExecutionFilter>
+
+               <groupId>com.lazerycode.selenium</groupId>
+               <artifactId>driver-binary-downloader-maven-plugin</artifactId>
+
+               <versionRange>[1.0.11,)</versionRange>
+
+               <goals>
+                 <goal>selenium</goal>
+               </goals>
+
+             </pluginExecutionFilter>
+             <action>
+               <execute>
+                 <runOnIncremental>false</runOnIncremental>
+               </execute >
+             </action>
+           </pluginExecution>
+         </pluginExecutions>
+       </lifecycleMappingMetadata>
+     </configuration>
+    </plugin>
+  </plugins>
+</pluginManagement>		 -->
 
     <profiles>
         <profile>
